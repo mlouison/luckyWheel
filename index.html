@@ -1,0 +1,55 @@
+<head>
+    <title>Wheel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="welcome" id="welcome">
+        <h1>THE WHEEL</h1>
+        <div class="buttons">
+            <button id="number">Number</button>
+            <button id="word">Words</button>
+        </div>
+        
+    </div>
+    <div class="wheel visuallyhidden" id="wheel">
+        <div class="selectNumber visuallyhidden">
+            <div class="wrapper">
+                <div class="values">
+                    <span id="range1">
+                        0
+                    </span>
+                    <span> &dash; </span>
+                    <span id="range2">
+                        100
+                    </span>
+                </div>
+                <div class="container">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="100" value="30" id="slider-1">
+                    <input type="range" min="0" max="100" value="70" id="slider-2">
+                </div>
+                <button id="submitNumber">Let's go !</button>
+            </div>
+        </div>
+        <div class="selectWord visuallyhidden">
+            <h1>Choose the words</h1>
+            <input type="text" id="wordInput">
+            <button id="wordButton">Submit</button>
+            <div class="words">
+                <ul id="wordList">
+                </ul>
+
+            </div>
+            <button id="submitWord">Let's go !</button>
+        </div>
+        <div class="myWheel visuallyhidden" id="myWheel">
+            <div id="wheelOfFortune">
+                <canvas id="wheelTest" width="300" height="300"></canvas>
+                <div id="spin">SPIN asd asd asd as dasd as dasd asd asd as d</div>
+              </div>
+            
+        </div>
+    </div>
+</body>
