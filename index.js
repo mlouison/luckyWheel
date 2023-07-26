@@ -71,10 +71,15 @@ document.addEventListener("DOMContentLoaded", function(_e) {
 
 
     document.getElementById("submitWord").addEventListener("click", function(){
-        document.getElementsByClassName("selectNumber")[0].classList.add("visuallyhidden")
-        document.getElementsByClassName("selectWord")[0].classList.add("visuallyhidden")
-        createWordWheel();
-        document.getElementById("myWheel").classList.remove("visuallyhidden")
+        if(wordList.length < 2 ){
+            alert("Please enter at least two word");
+        }
+        else{
+          document.getElementsByClassName("selectNumber")[0].classList.add("visuallyhidden")
+          document.getElementsByClassName("selectWord")[0].classList.add("visuallyhidden")
+          createWordWheel();
+          document.getElementById("myWheel").classList.remove("visuallyhidden")
+          }
         }
     );
     function hslToHex(h, s, l) {
